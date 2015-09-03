@@ -1,11 +1,29 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
     font-family: serif;
 }
 
+body {
+    background: #c6c6c6; /* Old browsers */
+    background: -moz-linear-gradient(top, #c6c6c6 0%, #d3d3d3 50%, #dedede 69%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c6c6c6), color-stop(50%,#d3d3d3), color-stop(69%,#dedede), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #c6c6c6 0%,#d3d3d3 50%,#dedede 69%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #c6c6c6 0%,#d3d3d3 50%,#dedede 69%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #c6c6c6 0%,#d3d3d3 50%,#dedede 69%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #c6c6c6 0%,#d3d3d3 50%,#dedede 69%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c6c6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
+    background: #fff;
 }
 
 .header div {
@@ -34,13 +52,14 @@ html {
     max-width: 20em;
     width: 24.72%;
     text-align: center;
+    padding-bottom: 0.01em;
 }
 
 .nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.1em;
-    padding: 1em 0 0.75em;
+    padding: 1em 0 0.7em;
     width: 100%;
     height: 100%;
     display: block;
@@ -61,26 +80,55 @@ html {
 
 .contentbody div{
     display: inline-block;
+    vertical-align: top;
 }
 
 .main {
-    width: 68%;
-    padding: 2px;
+    width: 69%;
+    padding: 0.25em 1.5em;
 }
 
 .main h1 {
     color: #ffd60c;
 }
 
-.main p {
+p {
     text-align: justify;
 }
 
 .main p a {
     color: #cc0000;
 }
-.hero-para {
+
+.main p a img {
+    height: 32px;
+    width: 32px;
+}
+
+h2 {
     font-size: 1.2em;
     font-weight: 600;
     border-bottom: solid 2px #ccc;
+    padding-bottom: 0.5em;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 1.5em 1.5em;
+    margin: 0 auto;
+}
+
+.sidebar h2 {
+    border-bottom: none;
+    color: #ffd60c;
+    font-size: 1.5em;
+    margin-bottom: 1px;
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+.sidebar p {
+    margin: 1px;
 }
