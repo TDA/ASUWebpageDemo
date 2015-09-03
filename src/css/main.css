@@ -132,3 +132,51 @@ h2 {
 .sidebar p {
     margin: 1px;
 }
+
+.footer {
+    border-top: solid 2px #000;
+}
+.footer .columns {
+    display: inline-block;
+    width: 16%;
+    padding: 0.5em;
+    color: #888;
+    vertical-align: top;
+    font-size: 0.8em;
+}
+
+.footer .columns:first-child {
+    padding-left: 1.25em;
+    text-align: justify;
+}
+
+.columns a {
+    color: inherit;
+}
+
+.columns ul {
+    list-style: none;
+}
+.columns li:first-child {
+    font-weight: 600;
+    color: #000;
+}
+
+.footerlinks {
+    background: #000;
+    height: 1.5em;
+    color: #fff;
+    text-align: right;
+    padding: 4px 2px;
+}
+.footerlinks a {
+    min-width: 4em;
+    display: inline-block;
+    color: inherit;
+    border-left: solid 1px #fff;
+    padding:0 0.5em;
+    text-decoration: none;
+}
+.footerlinks a:first-child {
+    border-left: none;
+}
