@@ -1,4 +1,5 @@
 $(document).ready( function () {
+  // cache these elements for future usage
   var hidden = $('.hidden');
   var reveal = $('.reveal');
   hidden.hide();
@@ -14,6 +15,7 @@ $(document).ready( function () {
       hidden.slideUp(200);
       hidden.addClass("more")
     }
+    // prevent default behavior
     return false;
   })
 });
